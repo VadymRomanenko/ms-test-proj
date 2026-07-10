@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Portfolio</title>
+	<!-- Primary stylesheet (referenced file) -->
+	<link rel="stylesheet" href="styles.css">
+		<!-- Styles moved to external styles.css -->
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="brand">
+				<img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Personal logo or portrait">
+				<div>
+					<div style="font-weight:700">Your Name</div>
+					<div style="font-size:0.85rem;color:var(--muted)">Frontend Developer</div>
+				</div>
+			</div>
+			<nav aria-label="Main navigation">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero" id="about" aria-labelledby="about-heading">
+				<h1 id="about-heading">Hi, I'm Your Name — I build accessible web apps</h1>
+				<p style="color:var(--muted)">I focus on responsive, performant and accessible user experiences. Below are a few selected projects.</p>
+				<div class="skills" aria-label="Key skills">
+					<span class="skill">HTML</span>
+					<span class="skill">CSS</span>
+					<span class="skill">JavaScript</span>
+					<span class="skill">React</span>
+					<span class="skill">Accessibility</span>
+				</div>
+
+				<h2 style="margin-top:18px">Projects</h2>
+				<div class="projects" id="projects">
+					<article class="card" aria-labelledby="p1">
+						<img src="https://images.unsplash.com/photo-1523475496153-3d6cc6caa3b7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Screenshot of project one">
+						<h3 id="p1">Project One</h3>
+						<p style="color:var(--muted)">A responsive web app built with performance in mind.</p>
+					</article>
+					<article class="card" aria-labelledby="p2">
+						<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Screenshot of project two">
+						<h3 id="p2">Project Two</h3>
+						<p style="color:var(--muted)">An accessible UI library and component set.</p>
+					</article>
+				</div>
+			</section>
+
+			<aside>
+				<div class="contact" id="contact">
+					<div class="card">
+						<h3>Contact me</h3>
+						<form id="contactForm" aria-label="Contact form">
+							<label for="name">Name</label>
+							<input id="name" name="name" type="text" placeholder="Your name" required>
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" placeholder="you@example.com" required>
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="4" placeholder="Say hello..." required></textarea>
+							<button type="submit">Send message</button>
+						</form>
+					</div>
+					<div style="margin-top:12px;text-align:center;color:var(--muted);font-size:0.95rem">Or find me on
+						<div style="margin-top:6px"><a href="#" style="color:var(--accent);text-decoration:none">GitHub</a> · <a href="#" style="color:var(--accent);text-decoration:none">LinkedIn</a></div>
+					</div>
+				</div>
+			</aside>
+		</main>
+
+		<footer>
+			<div>© <span id="year"></span> Your Name — Built with accessibility in mind</div>
+		</footer>
+	</div>
+
+	<!-- Primary script (referenced file) -->
+	<script src="scripts.js"></script>
+	<!-- Scripts moved to external scripts.js -->
+</body>
+</html>
